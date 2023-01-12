@@ -1,0 +1,170 @@
+/* GLOBAL */
+
+:root{
+    --white: #fafafa;
+    --black:  rgb(0, 0, 0);
+    --blue: #00348a;
+    --gray-light: #9e9e9e4b;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+
+
+/* HEADER */
+
+header{
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.5);
+    background-color: var(--white);
+}
+
+header a h1{
+    color: var(--black);
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+
+/* CONTAINER */
+
+.container {
+    width: 100%;
+    height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(19, 16, 16));
+}
+
+
+/* FORM */
+
+.container form{
+    background: var(--gray-light);
+
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+    padding: 1.5rem;
+    margin-top: 6%;
+
+    border-radius: 5px;
+}
+
+.container form label {
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container form input {
+    border: 0;
+    outline: 0;
+    margin: 5% 0px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.3);
+}
+
+.container form input:focus {
+    box-shadow: inset 1px 2px 4px 2px rgba(0,0,0,0.1);
+}
+
+
+.container form button {
+    cursor: pointer;
+    margin-top: 3%;
+    border: 0;
+    outline: 0;
+    padding: 8px;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    background: var(--black);
+    color: var(--white);
+    transition: 0.7s ease-in-out;
+}
+
+.container form button:hover{
+    color: var(--black);
+    background-color: var(--white);
+}
+
+
+/* SECTION */
+
+.container .result-box {
+    margin-top: 3%;
+    background: var(--white);
+    width: 40%;
+    padding: 2rem;
+
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+
+    
+}
+
+
+.container .result-box h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 3% 0;
+    text-align: center;
+}
+
+.container .result-box span {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+
+/* BTN JOGAR DE NOVO */
+
+.container #btnRestart {
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background: var(--black);
+    color: var(--white);
+    
+    padding: 1rem;
+    margin-top: 2%;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.3);
+    
+    transition: 0.7s ease-in-out;
+
+    display: none;
+}
+
+.container #btnRestart:hover {
+    color: var(--black);
+    background-color: var(--white);
+
+}
+
+
+footer {
+    padding: 0.4rem;
+    margin-bottom: 0;
+    text-align: center;
+    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
